@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+.text-right{
+   text-align: right;
+}
+
+.full-page
+{
+   height: 100%;
+   width:100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/main_bg.jpg);
+   background-position: center;
+   background-size: cover;
+   position:absolute;
+}
+.full-page-categories
+{
+   height: 100%;
+   width:100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/main_bg.jpg);
+   background-position: none;
+   background-size: cover;
+   position:absolute;
+}
+
+.full-page-login
+{
+   height: 100%;
+   width:100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/main_bg.jpg);
+   background-position: center;
+   background-size: cover;
+   position:fixed;
+}
+.logo
+{
+   width: 220px;
+   height: 110px;
+   
+}
+.slogan
+{
+   width: 300px;
+   height: 25px;
+   
+   
+}
+.navbar
+{
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   padding-left: 50px;
+   padding-right: 30px;
+   padding-top: 50px;
+}
+nav{
+   flex:1;
+   text-align:right;
+}
+nav ul
+{
+   display: inline-block;
+   list-style: none;
+}
+nav ul li
+{
+   display: inline-block;
+   list-style: none;
+}
+nav ul li a
+{
+   text-decoration: none;
+   font-size: 20px;
+   color: white;
+   font-family: sans-serif;
+
+   width:95%;
+   padding: 10px 30px;
+   cursor: pointer;
+   display: block;
+   margin: auto;
+   background: #F3C693;
+   border: 0;
+   outline: none;
+   border-radius: 30px;
+}
+nav ul li button
+{
+   font-size:20px;
+   color: white;
+   outline: none;
+   border: none;
+   background: transparent;
+   cursor: pointer;
+   font-family:sans-serif;
+}
+nav ul li button:hover
+{
+   color:aqua;
+}
+nav ul li a:hover
+{
+   color:aqua;
+}
+
+
+
+
+.form-box
+{
+   width:380px;
+   height:440px;
+   position:relative;
+   margin:2% auto;
+   background: rgba(0,0,0,0.3);
+   padding:10px;
+   overflow:hidden;
+}
+.form-box-dashboard
+{
+   width:1300px;
+   height:500px;
+   position:relative;
+   margin:2% auto;
+   background: rgba(0,0,0,0.3);
+   padding:10px;
+   overflow:hidden;
+}
+.form-box-categories
+{
+   width:340px;
+   height:200px;
+   position:relative;
+   left: 80px;
+   margin:2% auto;
+   background: rgba(227, 221, 221, 0.3);
+   padding:10px;
+   overflow:hidden;
+}
+.form-box-ad-categories
+{
+   width:1300px;
+   height:1500px;
+   position:relative;
+   left: 80px;
+   margin:2%;
+   background:rgba(0,0,0,0.3);
+   padding:10px;
+   overflow:hidden;
+}
+.form-box-add
+{
+   width:800px;
+   height:500px;
+   position:relative;
+   margin:2% auto;
+   background: rgba(0,0,0,0.3);
+   padding:10px;
+   overflow:hidden;
+}
+.form-box-add-food
+{
+   width:800px;
+   height:1000px;
+   position:relative;
+   margin:2% auto;
+   background: rgba(0,0,0,0.3);
+   padding:10px;
+   overflow:hidden;
+}
+.button-box
+{
+   width:220px;
+   margin:35px auto;
+   position:relative;
+   box-shadow: 0 0 20px 9px #ff61241f;
+   border-radius: 30px;
+   
+}
+.toggle-btn
+{
+   width:95%;
+   
+  
+   
+   margin: auto;
+   background: #F3C693;
+   border: 0;
+   outline: none;
+   border-radius: 30px;
+
+   padding:10px 30px;
+   cursor:pointer;
+   
+   
+   
+   position:relative;
+}
+#btn
+{
+   top:0;
+   left:0;
+   position: absolute;
+   width: 120px;
+   height: 50%;
+   background: #F3C693;
+   border-radius:30px;
+   transition: .5s;;
+   
+}
+.input-group-login
+{
+   top:150px;
+   position:absolute;
+   width:280px;
+   transition:.5s;
+   
+}
+.input-field
+{
+   width:100%;
+   padding:10px o;
+   margin: 5px 0;
+   border-left: 0;
+   border-right: 0;
+   border-top: 0;
+   border-bottom: 1px solid #999;
+   outline:none;
+   background: transparent;
+}
+.submit-btn
+{
+   width:85%;
+   padding: 10px 30px;
+   cursor: pointer;
+   display: block;
+   margin: auto;
+   background: #F3C693;
+   border: 0;
+   outline: none;
+   border-radius: 30px;
+   
+}
+.check-box
+{
+   margin: 30px 10px 34px 0;
+   color: #999;
+}
+span
+{
+   color:#777;
+   font-size:12px;
+   bottom:68px;
+   position:absolute;
+}
+#login
+{
+   left:50px;
+}
+#login input{
+   color:white;
+   font-size:15;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
+.block-display
+{
+   display: block;
+}
+.link-style
+{
+   width:95%;
+   padding: 10px 30px;
+   cursor: pointer;
+   margin: auto;
+   background: #F3C693;
+   border: 0;
+   outline: none;
+   border-radius: 30px;
+   
+}
+h1 {text-align: center;}
+h3 {text-align: center;}
+
+
+
+.full-page-order
+{
+   height: 200%;
+   width:100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/order_bg_2.png);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.full-page-admin
+{
+   height: 200%;
+   width:100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../images/admin_bg.png);
+   background-repeat: repeat-y;
+   background-position:center;
+   background-size: cover;
+   position: relative;
+}
+
+.center-text
+{
+   text-align: center;
+}
+
+.text-grey
+{
+   color:#57606f;
+}
+
+.bg-category
+{
+  
+   background-image: url(../images/order_bg.png);
+ 
+}
+
+/*------------------------------------Admin CSS---------------------------------------------------*/
+
+.table-full{
+   border-collapse: collapse;
+   width: 100%;
+   padding: 10px;
+ }
+.table-150{
+   width: 150%;
+}
+.table-200{
+   width: 120%;
+}
+table tr th{
+   border-bottom: 1px solid white;
+   padding:50px;
+   text-align:left;
+   
+}
+table tr td{
+   padding:15px;
+   text-align: left;
+}
+table tr td a
+{
+  
+  width:40%;
+  padding: 100%; 
+  background: #F3C693;
+   border-radius: 30px;
+  
+}
+th
+{
+   width:min-content;
+}
+/*tr:hover {background-color: #747d8c;}*/
+tr:nth-child(even) {background-color: #2d3436;}
+
+.btn-primary-add{
+   background-color: #70a1ff;
+   color: white;
+   cursor: pointer;
+   font-weight:bold;
+   text-align: center;
+   padding: 1.7%;
+
+}
+.btn-primary-add:hover{
+   background-color: #3742fa;
+   color:white;
+   font-weight:bold;
+
+}
+
+.btn-secondary{
+   background-color: #7bed9f;
+   padding: 1%;
+   background-size: 12px;
+   font-weight:bold;
+   color:black;
+   width:fit-content;
+   border-radius: 0px;
+   
+}
+.btn-secondary:hover{
+   background-color: #2ed573;
+   color:black;
+}
+.btn-secondary-category{
+   background-color: #7bed9f;
+   padding: 1.7%;
+   background-size: 12px;
+   font-weight:bold;
+   color:black;
+   width:fit-content;
+   border-radius: 0px;
+   
+}
+.btn-secondary-category:hover{
+   background-color: #2ed573;
+   color:black;
+}
+.btn-delete{
+   background-color: #ff6b81;
+   padding: 1%;
+   background-size: 12px;
+   font-weight:bold;
+   color:white;
+   width:fit-content;
+   border-radius: 0px;
+
+}
+.btn-delete:hover{
+   background-color: #ff4757;
+   color:white;
+}
+.btn-delete-category{
+   background-color: #ff6b81;
+   padding: 1.7%;
+   background-size: 12px;
+   font-weight:bold;
+   color:white;
+   width:fit-content;
+   border-radius: 0px;
+
+}
+.btn-delete-category:hover{
+   background-color: #ff4757;
+   color:white;
+}
+.btn-change_ps{
+   border-radius: 30px;
+   background-color: #e056fd;
+   padding: 1%;
+   background-size: 12px;
+   font-weight:bold;
+   color:white;
+   width:fit-content;
+   border-radius: 0px;
+
+}
+.btn-change_ps:hover{
+   background-color:#be2edd;
+   color:white;
+}
+.add{
+   padding:1%;
+}
+
+.text-bold
+{
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-black{
+   color: black;
+}
+.text-green
+{
+   color:#2ed573;
+}
+.text-black
+{
+   color:black;
+}
+.text-blue
+{
+   color:#1e90ff;
+}
+
+
+.width-50px
+{
+   width:2%;
+}
+
+
+.food-search input[type="search"]{
+   width: 50%;
+   padding: 1%;
+   font-size: 1rem;
+   border: 1px,solid,black;
+   border-radius: 5px;
+}
+a{
+   text-decoration: none;
+}
+
+.myborder
+{
+   border: black;
+}
+
+.category-menu{
+   background-color: #d0fef8;
+   padding: 4% 0;
+}
+
+.gif-menu{
+   background-color: #fbeff0;
+  
+
+}
+
+
+
+.gif-style{
+   width:360px;
+   height:720px;
+   margin:20px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.banner-style{
+   width:1000px;
+   height:720px;
+   margin:20px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width:1170px){
+   .nav-left{
+       width: 50%;
+   }
+   nav ul li {
+      display: block;
+      margin: 5px;
+  }
+}
+
+
+
